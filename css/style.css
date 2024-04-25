@@ -32,10 +32,17 @@
   transform: rotate(180deg);
 }
 
+/* Style the X */
+.btn-line.close {
+  width: 20px;
+  height: 2px;
+  margin: 0 0 6px 0;
+  background: #989493;
+}
+
 /* Styling the three lines 
   to make it an X */
 .menu-btn.close .btn-line:nth-child(1) {
-  background: #989493;
   transform: rotate(45deg) translate(5px, 5px);
 }
 
@@ -44,7 +51,6 @@
 }
 
 .menu-btn.close .btn-line:nth-child(3) {
-  background: #989493;
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
@@ -55,7 +61,7 @@
   margin-left: 6%;
   width: 88%;
   opacity: 0.9;
-  visibility: visible;
+  visibility: hidden;
 }
 
 .menu.show {
