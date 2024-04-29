@@ -11,22 +11,22 @@ function toggleMenu() {
     // Transform Hamburger to X button
     menuBtn.classList.add('close');
     btnLines.forEach((item) => item.classList.add('close'));
-            
+
     // Show menu
     menu.classList.add('show');
     menuItems.forEach((item) => item.classList.add('show'));
-            
+
     // Reset the menu state
     showMenu = true;
   } else {
     // Transform X to Hamburger button
     menuBtn.classList.remove('close');
     btnLines.forEach((item) => item.classList.remove('close'));
-        
+
     // Hide menu
     menu.classList.remove('show');
     menuItems.forEach((item) => item.classList.remove('show'));
-        
+    
     // Reset the menu state
     showMenu = false;
   }
