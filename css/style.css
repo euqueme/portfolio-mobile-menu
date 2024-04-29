@@ -2,4 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #3c3a39;
+  color: #fff5e1;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media screen and (min-device-width: 375px)
+  and (max-device-width: 768px) {
+  /* Styling the menu button */
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+
+  /* Styling the hamburger lines */
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white;
+    transition: all 0.5s ease-out;
+  }
+
+  /* Adding transform to the X */
+  .menu-btn.close {
+    transform: rotate(180deg);
+  }
+
+  /* Style the X */
+  .btn-line.close {
+    width: 20px;
+    height: 2px;
+    margin: 0 0 6px 0;
+    background: #989493;
+  }
+
+  /* Styling the three lines to make it an X */
+  .menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  /* Styling the position of the menu icon */
+  .menu {
+    position: relative;
+    margin-top: 15%;
+    margin-left: 6%;
+    width: 88%;
+    opacity: 0.9;
+    visibility: hidden;
+  }
+
+  .menu.show {
+    visibility: visible;
+  }
+
+  .menu-item {
+    padding: 2.5%;
+    font-size: x-large;
+    font-family: system-ui;
+    font-weight: 600;
+    border-bottom: #989493 0.3px solid;
+  }
+
+  /* Adding a transition delay to the
+   3 items in the navigation menu */
+  .menu-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .menu-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .menu-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
 }
