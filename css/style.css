@@ -8,6 +8,8 @@
   list-style-type: none;
 }
 
+@media screen and (min-device-width : 375px)
+and (max-device-width : 768px) {
 /* Styling the menu button */
 .menu-btn {
   position: absolute;
@@ -88,4 +90,5 @@
 
 .menu-item:nth-child(3) {
   transition-delay: 0.3s;
+}
 }

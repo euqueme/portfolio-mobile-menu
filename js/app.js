@@ -7,6 +7,8 @@ const menuItems = document.querySelectorAll(".menu-item");
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+menuItems.forEach((item) =>
+    item.addEventListener("click", toggleMenu));
 
 function toggleMenu() {
     if (!showMenu) {
