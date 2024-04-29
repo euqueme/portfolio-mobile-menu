@@ -1,41 +1,41 @@
-const menuBtn = document.querySelector(".menu-btn");
-const btnLines = document.querySelectorAll(".btn-line");
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menu-item");
-
-// Set the initial state of the menu
-let showMenu = false;
-
-menuBtn.addEventListener("click", toggleMenu);
-menuItems.forEach((item) =>
-    item.addEventListener("click", toggleMenu));
+const menuBtn = document.querySelector('.menu-btn');
+const btnLines = document.querySelectorAll('.btn-line');
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.menu-item');
 
 function toggleMenu() {
     if (!showMenu) {
         // Transform Hamburger to X button
-        menuBtn.classList.add("close");
+        menuBtn.classList.add('close');
         btnLines.forEach((item) =>
-            item.classList.add("close"));
+            item.classList.add('close'));
             
         // Show menu
-        menu.classList.add("show");
+        menu.classList.add('show');
         menuItems.forEach((item) =>
-            item.classList.add("show"));
+            item.classList.add('show'));
             
         // Reset the menu state
         showMenu = true;
     } else {
         // Transform X to Hamburger button
-        menuBtn.classList.remove("close");
+        menuBtn.classList.remove('close');
         btnLines.forEach((item) =>
-        item.classList.remove("close"));
+        item.classList.remove('close'));
         
         // Hide menu
-        menu.classList.remove("show");
+        menu.classList.remove('show');
         menuItems.forEach((item) =>
-            item.classList.remove("show"));
+            item.classList.remove('show'));
         
         // Reset the menu state
         showMenu = false;
     }
 }
+
+// Set the initial state of the menu
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+menuItems.forEach((item) =>
+    item.addEventListener('click', toggleMenu));
