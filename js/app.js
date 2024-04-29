@@ -26,7 +26,7 @@ function toggleMenu() {
     // Hide menu
     menu.classList.remove('show');
     menuItems.forEach((item) => item.classList.remove('show'));
-    
+
     // Reset the menu state
     showMenu = false;
   }
