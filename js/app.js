@@ -10,26 +10,22 @@ function toggleMenu() {
   if (!showMenu) {
     // Transform Hamburger to X button
     menuBtn.classList.add('close');
-    btnLines.forEach((item) =>
-    item.classList.add('close'));
+    btnLines.forEach((item) => item.classList.add('close'));
             
     // Show menu
     menu.classList.add('show');
-    menuItems.forEach((item) =>
-      item.classList.add('show'));
+    menuItems.forEach((item) => item.classList.add('show'));
             
     // Reset the menu state
     showMenu = true;
   } else {
     // Transform X to Hamburger button
     menuBtn.classList.remove('close');
-    btnLines.forEach((item) =>
-    item.classList.remove('close'));
+    btnLines.forEach((item) => item.classList.remove('close'));
         
     // Hide menu
     menu.classList.remove('show');
-    menuItems.forEach((item) =>
-    item.classList.remove('show'));
+    menuItems.forEach((item) => item.classList.remove('show'));
         
     // Reset the menu state
     showMenu = false;
@@ -37,5 +33,4 @@ function toggleMenu() {
 }
 
 menuBtn.addEventListener('click', toggleMenu);
-menuItems.forEach((item) =>
-  item.addEventListener('click', toggleMenu));
+menuItems.forEach((item) => item.addEventListener('click', toggleMenu));
